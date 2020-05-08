@@ -1,8 +1,10 @@
 def has_negatives(a):
-
-    """
-    YOUR CODE HERE
-    """
+    neg = {k:k*-1 for k in a}
+    result = []
+    for k in neg:
+        if neg[k] in neg:
+            if k > 0:
+                result.append(k)
 
     return result
 

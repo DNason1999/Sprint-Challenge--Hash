@@ -1,8 +1,18 @@
 def finder(files, queries):
+    query_path = {}
+    for f in files:
+        key = f.rsplit('/', 1)[1]
+        value = f
+        if key not in query_path:
+            query_path[key] = []
 
-    """
-    YOUR CODE HERE
-    """
+        query_path[key].append(f)
+
+    result = []
+
+    for x in queries:
+        if x in query_path:
+            result += query_path[x]
 
     return result
 
