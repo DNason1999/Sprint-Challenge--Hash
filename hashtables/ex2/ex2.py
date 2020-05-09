@@ -7,7 +7,6 @@ class Ticket:
 
 def reconstruct_trip(tickets, length):
     src_tic = {x.source:x for x in tickets}
-    dest_tic = {x.destination:x for x in tickets}
 
     route = []
 

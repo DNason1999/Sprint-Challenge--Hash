@@ -1,4 +1,14 @@
 def intersection(arrays):
+    # total = [j for i in arrays for j in arrays]
+
+    # result = []
+
+    # for x in arrays[0]:
+    #     if total.count(x) == len(arrays):
+    #         result.append(x)
+
+    # return result
+
     int_counts = {}
     for arr in arrays:
         for x in arr:
